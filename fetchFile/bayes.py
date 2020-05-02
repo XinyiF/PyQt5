@@ -87,6 +87,10 @@ class fileDialogdemo(QWidget):
         self.btn1.clicked.connect(self.getFiles)
         layout.addWidget(self.btn1)
 
+        self.pb = QPushButton('Close')
+        self.pb.clicked.connect(self.close)
+        layout.addWidget(self.pb)
+
         self.contents = QTextEdit()
         layout.addWidget(self.contents)
 
